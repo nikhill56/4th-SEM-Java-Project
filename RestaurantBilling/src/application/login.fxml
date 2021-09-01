@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <top>
+      <AnchorPane prefHeight="84.0" prefWidth="600.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutY="14.0" prefHeight="57.0" prefWidth="600.0" text="Cafe Noir" textFill="WHITE">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="292.0" prefWidth="206.0" style="-fx-background-color: #4aa6ed;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="316.0" prefWidth="340.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="18.0" layoutY="136.0" text="Password">
+               <font>
+                  <Font name="Calibri Light" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="14.0" prefHeight="38.0" prefWidth="164.0" text="Secure Login">
+               <font>
+                  <Font name="Calibri" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="93.0" text="Username">
+               <font>
+                  <Font name="Calibri Light" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTF" layoutX="103.0" layoutY="92.0" promptText="admin" />
+            <PasswordField fx:id="passPF" layoutX="103.0" layoutY="135.0" promptText="****" />
+            <Button fx:id="loginButton" layoutX="90.0" layoutY="193.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #4aa6ed;" text="Log in" />
+            <Button fx:id="closeButton" layoutX="140.0" layoutY="231.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="25.0" prefWidth="63" style="-fx-background-color: #4aa6ed;" text="Close" />
+            <Label fx:id="logindet" alignment="TOP_CENTER" layoutX="-34.0" layoutY="59.0" prefHeight="20.0" prefWidth="349.0" text="Enter your details" textFill="#4aa6ed">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+       
+            
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
